@@ -2,10 +2,10 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
+- Nome: Aline Dias
+- Matrícula: 19.1.8183
+- Curso: Sistemas de informação
+- Semestre/Ano correntes: 
 - Link para o seu GitHub:
 
 ## [Projeto final:](./Projeto/README.md)
