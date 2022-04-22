@@ -52,5 +52,6 @@
 
   O sistema será constituído das principais páginas: O sistema deve
   - Home: 
-  <img src="/img/Login" alt="Home"/>
-
+   <div align="center">
+      <img src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/issues/1#issue-1212978342">
+   </div>
