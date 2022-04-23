@@ -1,6 +1,6 @@
 # **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-## *Aluna: Aline Martins Dias *
+## Aluna: Aline Martins Dias 
 
 --------------
 
@@ -8,7 +8,7 @@
 
 ### Resumo
 
-  (O principal objetivo deste trabalho é desenvolver um sistema gerencial de metas  o qual será responsável pelo controle das métricas de faturamento voltado para empresas juniores, fornecendo informações seguras e em tempo hábil para tomada de decisão. Destaca-se que o controle de metas é de suma importância para a organização conquistar seus objetivos com eficiência e eficácia, pois permite  os usuários organizarem e planejarem as suas ações. Diante disso, o sucesso de uma empresa depende da forma como ela faz a sua gestão de metas. O projeto construído será estruturado como um produto viável mínimo (MVP), sendo as principais funcionalidades: 
+  O principal objetivo deste trabalho é desenvolver um sistema gerencial de metas  o qual será responsável pelo controle das métricas de faturamento voltado para empresas juniores, fornecendo informações seguras e em tempo hábil para tomada de decisão. Destaca-se que o controle de metas é de suma importância para a organização conquistar seus objetivos com eficiência e eficácia, pois permite  os usuários organizarem e planejarem as suas ações. Diante disso, o sucesso de uma empresa depende da forma como ela faz a sua gestão de metas. O projeto construído será estruturado como um produto viável mínimo (MVP), sendo as principais funcionalidades: 
   - Login
   - Cadastro das empresas juniores 
   - Cadastro das metas 
@@ -51,9 +51,26 @@
 ### 4. Protótipo
 
   O sistema será constituído das principais páginas: 
-  
+  - Home:
   <div align="center">
       <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/P%C3%A1gina%20principal%20(3).png" alt= "Home">
    </div>
+  - Login: 
+  <div align="center">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Login.png" alt= "Home">
+   </div>
+   - Página de cadastro: 
+   <div align="center">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro.png" alt= "Home">
+   </div>
 
+   - Página de cadastro das metas:
+   <div align="center">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro%20das%20Metas.png" alt= "Home">
+   </div>
+
+   - Página de exibição das metas por categorias: 
+    <div align="center">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Exibi%C3%A7%C3%A3o%20das%20metas%20por%20categorias.png" alt= "Home">
+   </div>
 
