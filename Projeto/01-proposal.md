@@ -14,27 +14,26 @@
   - Cadastro das metas 
   - Exibição de gráficos por categorias 
   
- 
-
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
+Para uma empresa júnior atingir o Alto Crescimento, todas as metas determinadas no início do ano precisam ser alcançadas. Diante isso, o tema final do trabalho tem como objetivo a criação de sistema de gestão de metas voltado para as empresas juniores para auxiliar no controle das 
+desafiadoras metas do Movimento Empresa Júnior (MEJ).
 
-  O trabalho final tem como tema o desenvolvimento de ...
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
-  O objetivo desta seção é definir as funcionalidade do sistema de
+  O objetivo desta seção é definir as funcionalidade do sistema.
   ## 2.1 Requisitos funcionais 
-  Os requisitos funcionais definem o que um sistema pode fazer. Abaixo é apresentado os principais requisitos funcionais  do sistema.
+  Os requisitos funcionais definem o que um sistema pode fazer. Abaixo é apresentado os principais requisitos funcionais  do  sistema desenvolvido.
   - RF001: O sistema deve cadastrar  empresas juniores; 
   - RF002: O sistema deve permitir ao usuário alteração e exclusão de dados;
   - RF003: O sistema deve permitir ao usuário que ele define metas, bem como também excluí-las;
   - RF004: O sistema deve gerar e exibir gráficos sobre as metas determinadas; 
 
   ## 2.2 Requisitos não-funcioanais
-  Os requisitos não-funcioanais definem a necessidade que não podem ser atendida através das funcionalidades.Abaixo é apresentado os principais requisitos não-funcionais do  sistema.
+  Os requisitos não-funcioanais definem a necessidade que não podem ser atendida através das funcionalidades. Abaixo é apresentado os principais requisitos não-funcionais do  sistema desenvolvido.
   - RNF001: O sistema deve trabalhar no ambiente web;
   - RNF002: O sistema deve possuir  um controle de acesso para o usuário;
   - RNF003: O sistema deve ser adaptável aos navegadores;
@@ -50,27 +49,29 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  O sistema será constituído das principais páginas: 
+  Esta seção apresenta o protótipo inicial do sistema, constituído das principais páginas: 
   - Home:
   <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/P%C3%A1gina%20principal%20(3).png" alt= "Home">
+      <img  width= "70%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/P%C3%A1gina%20principal%20(3).png" alt= "Home">
    </div>
+
   - Login: 
   <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Login.png" alt= "Home">
+      <img  width= "70%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Login.png" alt= "Home">
    </div>
+
    - Página de cadastro: 
    <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro.png" alt= "Home">
+      <img  width= "70%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro.png" alt= "Home">
    </div>
 
    - Página de cadastro das metas:
    <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro%20das%20Metas.png" alt= "Home">
+      <img  width= "70%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Cadastro%20das%20Metas.png" alt= "Home">
    </div>
 
    - Página de exibição das metas por categorias: 
     <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Exibi%C3%A7%C3%A3o%20das%20metas%20por%20categorias.png" alt= "Home">
+      <img  width= "70%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/Exibi%C3%A7%C3%A3o%20das%20metas%20por%20categorias.png" alt= "Home">
    </div>
 
