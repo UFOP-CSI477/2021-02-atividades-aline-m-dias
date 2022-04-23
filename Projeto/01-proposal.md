@@ -50,10 +50,10 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  O sistema será constituído das principais páginas: O sistema deve
-  - Home: 
-
+  O sistema será constituído das principais páginas: 
+  
   <div align="center">
-      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/issues/1#issue-1212978342" alt= "Home">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/blob/master/Projeto/IMG/P%C3%A1gina%20principal%20(3).png" alt= "Home">
    </div>
+
 
