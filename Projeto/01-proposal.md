@@ -54,6 +54,6 @@
   - Home: 
 
   <div align="center">
-      <img  width= "30%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/issues/1#issue-1212978342" alt= "Home">
+      <img  width= "100%" src="https://github.com/UFOP-CSI477/2021-02-atividades-aline-m-dias/issues/1#issue-1212978342" alt= "Home">
    </div>
 
