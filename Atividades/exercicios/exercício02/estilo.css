@@ -139,3 +139,24 @@ th, td {
 }
 
 
+.img2{
+    
+ width:10%;
+ border-radius: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+
+}
+
+#containerPerfil {
+    background-color: rgb(248, 241, 241);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:227px;
+    width:30%;
+    display: block;
+    font-size:20px;
+    padding: 10px;
+}
