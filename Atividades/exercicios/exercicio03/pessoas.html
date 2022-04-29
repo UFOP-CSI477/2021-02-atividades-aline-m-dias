@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cadastro de pessoas </title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div id="links">
+            <a href="index.html" target="_blank"> Home</a>
+            <a href="perfil.html" target="_blank">Perfil</a>
+            <a href="pessoas.html" target="_blank">Pessoas</a>
+            <a href="produtos.html" target="_blank">Produtos</a>
+            <a href="compras.html" target="_blank">Compras</a>
+            <a href="cidades.html" target="_blank">Cidades</a>
+            <a href="estados.html" target="_blank">Estados</a>
+            <a href="sair.html">Sair</a>
+
+        </div>
+    </header>
+
+    <h1> Formulário</h1>
+
+    <div>
+        <form action="validar.html" name="form" method="get">
+
+            <div id="container">
+
+                <div class="form">
+                    <div class="coluna">
+                        <label for="nomeDaPessoa">Nome:</label>
+                        <input type="text" name="nome" id="nomeDaPessoa" placeholder="Informe o seu nome">
+                    </div>
+                </div>
+
+                <div class="form">
+
+                    <div class="coluna">
+                        <label for="dataNascimento"> Data de nascimento:</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento"
+                            placeholder="Informe a sua data de nascimento">
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="coluna">
+                        <label for="CPF"> CPF:</label>
+                        <input type="text" name="CPF" id="CPF" placeholder="Informe o seu CPF">
+                    </div>
+
+                    <div class="form">
+                        <div class="coluna">
+                            <label for="nomeDaMae"> Nome da Mãe:</label>
+                            <input type="text" name="nomeDaMae" id="nomeDaMae" placeholder="Informe o nome da sua mãe">
+
+
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="coluna">
+                            <label for="nomeDaMae"> Nome do Pai:</label>
+                            <input type="text" name="nomeDoPai" id="nomeDoPai" placeholder="Informe o nome do seu pai">
+
+                        </div>
+                    </div>
+
+
+                    <div class="form">
+                        <div class="coluna">
+                            <label for="endereço"> Endereço:</label>
+                            <input type="text" name="endereço" id="endereço" placeholder="Informe o seu endereço">
+
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="coluna">
+
+                            <label for="telefone"> Telefone: </label>
+                            <input type="tel" name="telefone" id="telefone">
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </form>
+        <div>
+            <input type="button" value="Enviar dados">
+        </div>
+    </div>
+
+
+    <h1> Lista de pessoas cadastradas </h1>
+
+    <table border="1" id="containerTable">
+
+
+        <thead>
+
+            <tr>
+                <th >Código</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Nome da mãe </th>
+                <th>Telefone</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td >1</td>
+                <td>Aline</td>
+                <td>12345678900</td>
+                <td>Maria</td>
+                <td>31 912345678</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>João</td>
+                <td>12345678910</td>
+                <td>Lucia</td>
+                <td>31 912345587</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>José</td>
+                <td>12345678950</td>
+                <td>Ana Paula</td>
+                <td>31 912344788</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <footer> Desenvolvido por Aline Dias</footer>
+</body>
+
+</html>

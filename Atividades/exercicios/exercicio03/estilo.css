@@ -1,0 +1,162 @@
+html {
+
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-family: 20pt;
+}
+header{
+    background-color: #6c1da5;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    margin: 0;
+}
+
+footer{
+    background-color: #6c1da5;
+    padding: 20px;
+    text-align: center;
+    margin-top:10px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 25px;
+}
+
+p.info {
+
+    text-align: center;
+
+}
+
+a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 35px;
+    
+    
+  
+
+}
+
+a:hover {
+
+    background-color: #8c24d6;
+    font-weight: bold;
+    padding:20px;
+}
+
+a:active {
+    background-color: red;
+    color: black;
+}
+
+
+.saudacao{  
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.imagem{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    display: block;
+}
+
+form{
+
+    font-size: 25px;
+    padding: 15px; 
+}
+
+input{
+
+    width: 99%;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+input[type="button"]{
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    display: block;
+    background-color:#8c24d6;
+}
+
+input[type="button"]:hover{ 
+    font-weight: bold;
+    padding:10px;
+}
+.form{
+    clear: both;
+}
+
+.coluna{
+    width: 100%;    
+}
+
+#container {
+    background-color: rgb(248, 241, 241);
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    display: block;
+}
+
+#containerTable {
+    background-color: rgb(248, 241, 241);
+    width:39%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    display: block;
+
+}
+th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+
+.img2{
+    
+ width:10%;
+ border-radius: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+
+}
+
+#containerPerfil {
+    background-color: rgb(248, 241, 241);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:227px;
+    width:30%;
+    display: block;
+    font-size:20px;
+    padding: 10px;
+}
