@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas </title>
+</head>
+
+<body>
+
+    <form method="post" name="conversor">
+
+
+        <input type="number" name="valor" id="valor" placeholder="Digite o valor">
+
+        <select name="bancos" id="bancos" onchange="carregarBancos()">
+            <option value="">Converter de :</option>
+        </select>
+
+        <select name="bancos" id="bancos" onchange="carregarBancos()">
+            <option value="">Para:</option>
+        </select>
+
+        <input type="button" value="converter" onclick="carregarBancos()">
+
+    </form>
+</body>
+
+</html>
