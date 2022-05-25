@@ -5,27 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Conversor de moedas </title>
+    
 </head>
 
-<body>
+<body onload="carregarMoedas()">
 
+    <div class="titulo">
+
+        <p> Conversor de Moedas </p>
+
+    </div>
+    
     <form method="post" name="conversor">
 
+        <div class="conteiner">
 
-        <input type="number" name="valor" id="valor" placeholder="Digite o valor">
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor em reais (R$)">
 
-        <select name="bancos" id="bancos" onchange="carregarBancos()">
-            <option value="">Converter de :</option>
-        </select>
+            <input type="button" value="Carregar Moedas" onclick="carregarMoedas()">
 
-        <select name="bancos" id="bancos" onchange="carregarBancos()">
-            <option value="">Para:</option>
-        </select>
+            <select name="moedas" id="moedas" onchange="carregarMoedas()">
+                <option value="">Converter de :</option>
+            </select>
+    
+            <select name="moedas" id="moedas" onchange="carregarMoedas()">
+                <option value="">Para:</option>
+            </select>
+        </div>
+       
 
-        <input type="button" value="converter" onclick="carregarBancos()">
+        <div class="centralizar">
+
+            <input type="button" value="converter" onclick="converter()">
+        </div>
+      
 
     </form>
+
+    <script src="api.js"></script>
 </body>
 
 </html>

@@ -15,35 +15,38 @@
         <!--Imagem disponível em: https://www.google.com/url?sa=i&url=https%3A%2F%2Flogopng.com.br%2Flogo%2Fpix-106&psig=AOvVaw0o8Cs3QsRomBjqQ8dQ0yqn&ust=1652308679001000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKivqc__1fcCFQAAAAAdAAAAABAD - acesso: maio/2022-->
         <img id="logo" src="./img/logoPix.png" alt="logo">
     </header>
-<div class="dados">
-    <form action="#" method="post" name="pixEnvio">
+    <div class="dados">
 
-            <select name="select">
-                <option value="CPF">CPF</option>
-                <option value="CNPJ" selected>CNPJ</option>
-                <option value="Email">E-mail</option>
-                <option value="Celular">Celular</option>
-                <option value="ChaveAleatoria">Chave Aleatória</option>
-            </select>
+        <form action="#">
 
-            <select name="bancos" id="bancos" onchange="carregarBancos()">
-                <option value="">Selecione o banco:</option>
-            </select>    
+                <select name="select">
+                    <option value="CPF">CPF</option>
+                    <option value="CNPJ" selected>CNPJ</option>
+                    <option value="Email">E-mail</option>
+                    <option value="Celular">Celular</option>
+                    <option value="ChaveAleatoria">Chave Aleatória</option>
+                </select>
 
-            <input type="number" name="valor" id="valor" placeholder="Digite o valor da transação">
+                <input type="button" value="carregar bancos" onclick="carregarBancos()">
 
-            <input type="text" name="descrição" id="descrição" placeholder="Digite o descrição">
+            
+                <select name="bancos" id="bancos" onchange="carregarBancos()">
+                    <option value="">Selecione o banco:</option>
+                </select>    
 
-            <input type="button" value="Enviar PIX" onclick="carregarBancos()">
+                <input type="number" name="valor" id="valor" placeholder="Digite o valor da transação">
+
+                <input type="text" name="descrição" id="descrição" placeholder="Digite o descrição">
+
+                <input type="button" value="Enviar PIX" onclick="calcularSaldo()">
+
+        
+        </form>
 
       
-    </form>
-
+    </div>
+    
     <script src="api.js"></script>
-</div>
-  
-
-
 </body>
 
 </html>
