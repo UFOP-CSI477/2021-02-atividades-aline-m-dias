@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Controle Pix</title>
+
+</head>
+
+<body onload="carregarBancos()">
+
+    <header>
+        <!--Imagem disponível em: https://www.google.com/url?sa=i&url=https%3A%2F%2Flogopng.com.br%2Flogo%2Fpix-106&psig=AOvVaw0o8Cs3QsRomBjqQ8dQ0yqn&ust=1652308679001000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKivqc__1fcCFQAAAAAdAAAAABAD - acesso: maio/2022-->
+        <img id="logo" src="./img/logoPix.png" alt="logo">
+    </header>
+
+    <div>
+        <form class="mx-auto m-5" method="post" name="dados" style="width: 700px;">
+
+            <div class="form-group">
+                <label for="operacao">Tipo de transação:</label>
+                <select class="form-control" name="operacao" id="operacao">
+                    <option value="">Selecione:</option>
+                    <option value="Envio">Enviar PIX</option>
+                    <option value="Recebimento">Receber PIX</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="" for="tipo_chave">Tipo de chave:</label>
+                <select name="tipoChave" id="tipoChave" class="form-control">
+                    <option value="">Selecione:</option>
+                    <option value="CPF">CPF</option>
+                    <option value="CNPJ">CNPJ</option>
+                    <option value="Email">E-mail</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Chave Aleatoria">Chave aleatória</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="chave">Informe sua chave:</label>
+                <input class="form-control" type="text" name="chave" id="chave">
+            </div>
+
+            <div class="form-group">
+                <label class="" for="banco">Banco:</label>
+                <select class="form-control" name="banco" id="banco">
+                    <option value="">Selecione:</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="" for="valor">Valor:</label>
+                <input class="form-control" type="text" name="valor" id="valor">
+            </div>
+
+            <div class="form-group">
+                <label class="" for="data">Data:</label>
+                <input class="form-control" type="date" name="data" id="data">
+            </div>
+
+            <div class="form-group">
+                <label class="" for="data">Descrição:</label>
+                <input class="form-control" type="descricap" name="descricao" id="descricao">
+            </div>
+
+            <div class="form-group row d-flex justify-content-center p-3">
+                <input class="btn" type="button" value="Enviar" onclick="calcularSaldo()">
+            </div>
+        </form>
+    </div>
+
+    <div class="mx-auto m-5" style="width: 700px;">
+        <div class="form-group row d-flex justify-content-center p-3">
+            <input class="btn" type="button" value="Extrato" onclick="extrato()">
+        </div>
+    </div>
+
+    <div div class="mx-auto m-5" id="extrato" style="width: 700px;">
+
+        <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+        </div>
+        <div class="flex justify-start items-center space-x-4 w-full">
+            <hr class="border-gray-400 w-full" />
+        </div>
+
+        <div class="text-center">
+            <h1>Extrato</h1>
+        </div>
+
+        <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+        </div>
+        <div class="flex justify-start items-center space-x-4 w-full">
+            <hr class="border-gray-400 w-full" />
+        </div>
+        <div id="enviarPIX">
+            <h3 id="saldo_total_enviado">Saldo total de PIX enviado:</h3>
+        </div>
+
+        <div id="receberPIX">
+            <h3 id="saldo_total_recebido">Saldo total de PIX  recebido:</h3>
+        </div>
+
+        <h3 id="saldoFinalMovimentado"></h3>
+
+        <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+        </div>
+        <div class="flex justify-start items-center space-x-4 w-full">
+            <hr class="border-gray-400 w-full" />
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="api.js"></script>
+
+</html>

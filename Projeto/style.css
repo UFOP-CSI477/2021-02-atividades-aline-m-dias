@@ -1,10 +1,58 @@
-html{
+body{
     
     background: linear-gradient(#ffffff,#f1b9f1);
-   
+
     
 }
 #logo{
 
     width: 10%;
+}
+
+.centralizarDireita{
+    width: 50%;
+    float:right;
+    margin-top: 8rem;
+    margin-left: 10%;
+    
+}
+
+p{
+    color: black;
+    font-size:47px;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+
+.centralizarEsquerda{
+
+    width: 35%;
+    float:left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left:30px;
+    
+}
+input[type="button"]{
+    background-color: #eb6de3;
+    border-radius:10px;
+    text-align:center;
+    text-decoration-color: white;
+    width: 50%;
+    float:right;
+    margin:50%;
+    display: block;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    text-align: center;
+    width: 100%;
+}
+
+.container{
+    padding-bottom: 25px;
 }

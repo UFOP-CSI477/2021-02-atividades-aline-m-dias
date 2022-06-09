@@ -21,14 +21,15 @@
 
         function carregarDados() {
 
-            const nome = documemt.getElementById("nome").value;
-            const sobrenome = document.getElementById("sobrenome").value;
+            //const nome = documemt.getElementById("nome").value;
 
-            const pessoa = new Pessoa(nome, sobrenome);
+            const nome = document.dados.nome.value;
+            const sobrenome = document.dados.sobrenome.value;
+            const endereco = document.dados.endereco.value;
+
+            const pessoa = new Pessoa(nome, sobrenome, endereco);
             console.log(pessoa);
-            document.getElementById("resultado").innerHTML = '<h2>Dados carregados com sucesso: ${nome} ${sobrenome}</h2>';
-
-
+            document.getElementById("resultado").innerHTML = `h2> Dados carregados com sucesso: ${nome} ${sobrenome}  ${endereco} </h2>`;
         }
 
     </script>
@@ -38,16 +39,16 @@
 
 
     <div class="mx-auto" style="width: 700px; margin-top:30px">
-        <form>
-            <div class="form-group" id="dados">
+        <form name="dados">
+            <div class="form-group" id="nome">
                 <label for="exampleInputEmail1">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
             </div>
-            <div class="form-group">
+            <div class="form-group" id="sobrenome">
                 <label for="exampleInputEmail1">Sobrenome</label>
                 <input type="text" class="form-control" id="sobrenome" placeholder="Digite o seu sobrenomo">
             </div>
-            <div class="form-group">
+            <div class="form-group" id="endereco">
                 <label for="exampleInputEmail1">Endereço</label>
                 <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço">
             </div>
@@ -55,9 +56,11 @@
             <button style="margin-top:10px;" type="submit" class="btn btn-primary"
                 onclick="carregarDados()">Enviar</button>
         </form>
+
     </div>
 
     <div id="resultado"></div>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -6,44 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Conversor de moedas </title>
-    
+
 </head>
 
 <body onload="carregarMoedas()">
 
     <div class="titulo">
-
-        <p> Conversor de Moedas </p>
+        <p> CONVERSOR DE MOEDAS</p>
 
     </div>
-    
-    <form method="post" name="conversor">
 
-        <div class="conteiner">
+    <form class="mx-auto m-5" method="post" name="conversor" style="width: 700px;">
 
-            <input type="number" name="valor" id="valor" placeholder="Digite o valor em reais (R$)">
+        <div class="form-group">
+            <label class="" for="data">Data da cotação:</label>
+            <input class="form-control" type="date" name="data" id="data">
+        </div>
 
-            <input type="button" value="Carregar Moedas" onclick="carregarMoedas()">
 
-            <select name="moedas" id="moedas" onchange="carregarMoedas()">
+        <div class="form-group">
+            <label class="" for="">Qual valor deseja converter?</label>
+            <input class="form-control" type="text" name="valor" id="valor" placeholder="Digite o valor">
+        </div>
+
+        <div class="form-group">
+            <label class="" for="">Qual a moeda de origem?</label>
+            <select class="form-control" name="moedaOrigem" id="moedaOrigem">
                 <option value="">Converter de :</option>
             </select>
-    
-            <select name="moedas" id="moedas" onchange="carregarMoedas()">
-                <option value="">Para:</option>
+        </div>
+
+        <div class="form-group">
+            <label class="" for="">Qual a moeda de destino?</label>
+            <select class="form-control" name="moedaDestino" id="moedaDestino">
+                <option value="">Para :</option>
             </select>
         </div>
-       
 
-        <div class="centralizar">
 
-            <input type="button" value="converter" onclick="converter()">
+        <div class="form-group row d-flex justify-content-center p-3">
+            <input class="btn" type="button" value="converter" onclick="converter()">
         </div>
-      
+
 
     </form>
 
+    <div div class="mx-auto m-5" id="resultado" style="width: 700px;">
+
+        <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+        </div>
+        <div class="flex justify-start items-center space-x-4 w-full">
+            <hr class="border-gray-400 w-full" />
+        </div>
+
+
+        <div>
+            <div class="text-center">
+                <h3>RESULTADO</h3>
+            </div>
+
+            <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+            </div>
+            <div class="flex justify-start items-center space-x-4 w-full">
+                <hr class="border-gray-400 w-full" />
+            </div>
+
+            <div class="">
+                <label class="">Conversão de:</label>
+                <span class="" id="conversao"></span>
+            </div>
+            <div class="">
+                <label class="">Valor a converter:</label>
+                <span class="" id="valor_inicial"></span>
+            </div>
+
+            <div class="">
+                <label class="">Para:</label>
+                <span class="" id="conversao_final"></span>
+            </div>
+
+
+            <div class="">
+                <label class="">Resultado da conversão:</label>
+                <span class="" id="valor_final"></span>
+            </div>
+
+            <div>
+                <label class="">Data da cotação utilizada:</label>
+                <span class="" id="data_cotacao_final"></span>
+            </div>
+        </div>
+
+
+        <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+        </div>
+        <div class="flex justify-start items-center space-x-4 w-full">
+            <hr class="border-gray-400 w-full" />
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="api.js"></script>
 </body>
 

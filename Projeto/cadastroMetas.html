@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="./IMG/logo.png" alt="logo">
+    </header>
+
+    <div class="flex justify-center items-center w-full py-12 px-4">
+        <!-- <button id="menuBtn" onclick="show('menu')"
+            class="rounded hidden px-6 py-2 leading-4 text-base text-white bg-blue-700 hover:bg-blue-600 focus:bg-blue-800">Open</button> -->
+        <div id="menu"
+            class="relative py-6 px-4 md:p-14 w-full md:w-8/12 lg:w-7/12 xl:w-5/12 xl:w-4/12 bg-white rounded shadow flex flex-col justify-start items-start space-y-6">
+            <div class="flex justify-start items-start flex-col space-y-4">
+                <p class="text-2xl md:text-3xl font-bold leading-7 text-gray-800">Cadastre suas metas</p>
+
+            </div>
+            <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+
+            </div>
+            <div class="flex justify-start items-center space-x-4 w-full">
+                <hr class="border-gray-400 w-full" />
+
+
+            </div>
+            <div class="w-full flex flex-col justify-start items-start space-y-4">
+                <p class="text-base leading-4 text-gray-800">Faturamento</p>
+                <div class="relative w-full flex justify-center items-center">
+                    <input
+                        class="pl-14 pr-6 w-full py-4 border rounded focus:outline border-gray-400 text-sm leading-4 text-gray-800 placeholder-gray-800"
+                        type="text" placeholder="Digite seu  faturamento" name="" id="" />
+
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-start items-start space-y-4">
+                <p class="text-base leading-4 text-gray-800">Quantidade de membros</p>
+                <div class="relative w-full flex justify-center items-center">
+                    <input
+                        class="pl-14 pr-6 w-full py-4 border rounded focus:outline border-gray-400 text-sm leading-4 text-gray-500 placeholder-gray-500"
+                        type="text" placeholder="Digite a quantidade de membros" name="" id="" />
+
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-start items-start space-y-4">
+                <p class="text-base leading-4 text-gray-800">Quantidade de projetos</p>
+                <div class="relative w-full flex justify-center items-center">
+                    <input
+                        class="pl-14 pr-6 w-full py-4 border rounded focus:outline border-gray-400 text-sm leading-4 text-gray-500 placeholder-gray-500"
+                        type="text" placeholder="Digite a quantidade de projetos" name="" id="" />
+
+                </div>
+            </div>
+
+
+            <div class="w-full flex sm:flex-row flex-col justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4">
+
+            </div>
+            <div class="flex justify-start items-center space-x-4 w-full">
+                <hr class="border-gray-400 w-full" />
+
+
+            </div>
+
+            <button
+                class="py-4 w-full rounded bg-fuchsia-500 hover:bg-fuchsia focus:bg-fuchsia-500 text-base font-medium leading-none text-white">
+                Cadastrar</button>
+            <button onclick="show('menu')" class="absolute top-0 right-6">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_dd)">
+                        <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_dd" x="-3" y="-2" width="30" height="30" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="1" />
+                            <feGaussianBlur stdDeviation="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="1" />
+                            <feGaussianBlur stdDeviation="1.5" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                            <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var main = document.querySelectorAll("[data]");
+        for (i = 0; i < main.length; i++) {
+            let menu = main[i];
+            menu.addEventListener("click", () => {
+                let svg = menu.children[1];
+                let input = menu.children[0];
+                svg.classList.toggle("hidden");
+                input.classList.toggle("bg-blue-700");
+            });
+        }
+
+        show = (id) => {
+            document.getElementById(id + "Btn").classList.toggle("hidden");
+            document.getElementById(id).classList.toggle("hidden");
+        };
+    </script>
+
+</body>
+
+</html>
