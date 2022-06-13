@@ -23,8 +23,9 @@ class RegistroController extends Controller
 
     public function index()
     {
-        $manutencoes = Registro::orderBy('nome')->paginate(20);
+        $manutencoes = Registro::orderBy('datalimite')->paginate(10);
         return view('manutencoes.index', ['manutencoes' => $manutencoes]);
+    
     }
 
 
@@ -46,13 +47,17 @@ class RegistroController extends Controller
      */
     public function store(StoreRegistroRequest $request)
     {
-        if (Equipamento::create($request->all())) {
+        if (Registro::create($request->all())) {
             session()->flash('mensagem', 'Manutenção inserida com sucesso!');
             return redirect()->route('manutencoes.index');
+
         } else {
             session()->flash('mensagem-erro', 'Erro na gravação da manutenção');
             return back()->withInput();
         }
+        
+  
+       
     }
 
     /**

@@ -1,8 +1,8 @@
-@extends('app')
+@extends('manutencoes.manutencao')
 
-@section('conteudo')
+@section('formulario')
 
-<form action="{{ route('manutencoes.store') }}" method="POST">
+<form action="{{route('manutencoes.store') }}" method="POST">
     <div class="form-group">
         <label for="datalimite"> Data Limite</label>
         <input type="date" class="form-control" id="datalimite" name="datalimite" required="">

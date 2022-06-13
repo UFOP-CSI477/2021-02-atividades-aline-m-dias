@@ -7,7 +7,7 @@
     <h2>Lista de Manutenções</h2>
 
     @if(Auth::check())
-    <a class="btn btn-primary" href="{{ route('manutencoes.create') }} "> Cadastrar</a>
+    <a class="btn btn-primary" href="{{ route('manutencoes.create') }} "> Incluir</a>
     @endif
 
     <table class="table table-stripped table-hover">
@@ -53,7 +53,7 @@
                 <td>
                     <div class="">
                         <div >
-                            <a href="{{ route('manutencoes.edit', $m->id) }}" class="btn btn-primary">Editar</a>
+                            <a href="{{route('manutencoes.edit', $m->id) }}" class="btn btn-primary">Editar</a>
                         </div>
                         <div class="p-2">
                             <form action="{{ route('manutencoes.destroy', $m->id) }}" method="post">
