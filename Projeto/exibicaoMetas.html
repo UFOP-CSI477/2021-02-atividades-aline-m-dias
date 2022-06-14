@@ -8,32 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Metas</title>
 
-    <!-- Código do gráfico disponível em:https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/piechart.html -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Work', 11],
-                ['Eat', 2],
-                ['Commute', 2],
-                ['Watch TV', 2],
-                ['Sleep', 7]
-            ]);
-
-            var options = {
-                title: 'My Daily Activities'
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-            chart.draw(data, options);
-        }
-    </script>
 </head>
 
 <body>
@@ -41,7 +15,49 @@
         <img id="logo" src="./IMG/logo.png" alt="logo">
     </header>
 
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div class="container">
+
+        <!-- Código do gráfico disponível em:https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/piechart.html -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Faturamento', 70],
+                    ['Membros ', 10],
+                    ['Projetos ', 20],
+                    
+
+                ]);
+
+                var options = {
+                    title: 'Metas',
+                    colors: ['#86128A', '#f205cb', '#D33AD8',]
+            
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    </div>
+
+    <div class="container" id="piechart" style="width: 900px; height: 500px; margin-left:18%"></div>
+
+    <!-- CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- JS -->
+    <script src=" {{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
